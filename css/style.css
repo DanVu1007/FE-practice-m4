@@ -10,10 +10,29 @@
   font-weight: 400;
   font-style: normal;
 }
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-fluid {
+  width: 100%;
+  padding: 0 15px;
+}
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  width: 33.33333333%;
+  padding: 0 15px;
 }
 h1 {
   color: #fff;

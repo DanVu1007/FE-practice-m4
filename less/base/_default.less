@@ -1,5 +1,43 @@
-body{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.row {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    .cols(33.33333333%);
+}
+
+a {
+    text-decoration: none;
+
+    &:hover{
+
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
 }
