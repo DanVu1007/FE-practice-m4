@@ -55,12 +55,13 @@ ul li {
   background-color: #000;
   opacity: 0;
   position: fixed;
-  z-index: 0;
+  z-index: -1;
   display: none transition: all, 0.3s; -webkit-transition: all, 0.3s; -moz-transition: all, 0.3s; -ms-transition: all, 0.3s; -o-transition: all, 0.3s;;
 }
 .cover.active {
   opacity: 0.9;
   z-index: 1;
+  display: block;
 }
 .header {
   position: absolute;
@@ -77,6 +78,7 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 5px;
 }
 .header .container .logo {
   width: 200px;
@@ -88,7 +90,8 @@ ul li {
   display: none;
 }
 .header .container .menu {
-  width: 600px;
+  margin-left: -50px;
+  width: 590px;
 }
 .header .container .menu ul {
   display: flex;
@@ -136,9 +139,9 @@ ul li {
   max-height: 950px;
   margin-top: 0;
   overflow: hidden;
-  color: red;
   position: relative;
   z-index: -1;
+  color: #fff;
 }
 .main-banner-img {
   background-color: #000;
@@ -149,38 +152,132 @@ ul li {
 }
 .main-banner-item {
   position: absolute;
-  background-color: aqua;
-  top: 50%;
+  z-index: 10;
+  top: 31%;
   left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
-.main-banner-item .container .main-banner-content .title {
+.main-banner-item .main-banner-content .title {
   font-size: 60px;
   font-weight: 700;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
-.main-banner-item .container .main-banner-content .title .title-sub {
+.main-banner-item .main-banner-content .title .title-sub {
+  margin-top: -9px;
   font-size: 40px;
 }
-.main-banner-item .container .main-banner-content .detail {
+.main-banner-item .main-banner-content .detail {
   font-size: 14px;
   width: 530px;
+  line-height: 1.7em;
 }
-.main-banner-item .container .main-banner-content .btn {
-  margin-top: 60px;
+.main-banner-item .main-banner-content .detail:hover {
+  cursor: pointer;
 }
-.main-banner-item .container .main-banner-content .btn a {
+.main-banner-item .main-banner-content .btn {
+  margin-top: 70px;
+}
+.main-banner-item .main-banner-content .btn a {
   font-size: 14px;
   text-transform: uppercase;
-  padding: 20px 47px;
-  color: #dd2f31;
+  padding: 15px 47px;
   border: 1px solid #fff;
 }
-.main-banner-item .container .main-banner-content .btn:hover {
-  cursor: pointer;
+.main-banner-character {
+  position: absolute;
+  z-index: 9;
+  top: 190px;
+  right: 18.3%;
+  width: 438px;
+}
+.main-banner-character img {
+  width: 100%;
+}
+.sub-banner {
+  margin-top: -78px;
+  margin-bottom: 100px;
+}
+.sub-banner .container .sub-banner-wrap {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sub-banner .container .sub-banner-wrap .sub-banner-item {
+  width: 33.33333%;
+  height: 250px;
+  overflow: hidden;
+}
+.sub-banner .container .sub-banner-wrap .sub-banner-item img {
+  width: 100%;
+}
+.sub-banner .container .sub-banner-wrap .sub-banner-item-content {
+  background-color: #fff;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sub-banner .container .sub-banner-wrap .sub-banner-item-content .title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  padding-top: 20px;
+}
+.sub-banner .container .sub-banner-wrap .sub-banner-item-content .detail {
+  max-width: 290px;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.7em;
+  padding-bottom: 32px;
+  padding-top: 19px;
 }
 @media all and (max-width: 1024px) {
   .header .container .menu {
     width: 500px;
+  }
+  .main-banner-item .main-banner-content .title {
+    margin-bottom: 30px;
+  }
+  .main-banner-item .main-banner-content .title .title-sub {
+    font-size: 40px;
+  }
+  .main-banner-item .main-banner-content .detail {
+    font-size: 14px;
+    width: 500px;
+  }
+  .main-banner-item .main-banner-content .btn {
+    margin-top: 50px;
+  }
+  .main-banner-item .main-banner-content .btn a {
+    font-size: 14px;
+  }
+  .main-banner-character {
+    top: 195px;
+    right: -2%;
+    width: 320px;
+  }
+  .sub-banner {
+    margin-top: -160px;
+  }
+  .sub-banner .container .sub-banner-wrap {
+    height: 300px;
+  }
+  .sub-banner .container .sub-banner-wrap .sub-banner-item {
+    height: 150px;
+  }
+  .sub-banner .container .sub-banner-wrap .sub-banner-item-content {
+    padding: 0;
+  }
+  .sub-banner .container .sub-banner-wrap .sub-banner-item-content .detail {
+    font-size: 10px;
   }
 }
 @media all and (max-width: 768px) {
@@ -247,6 +344,42 @@ ul li {
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
+  }
+  .main-banner-item .main-banner-content .title {
+    margin-bottom: 30px;
+  }
+  .main-banner-item .main-banner-content .title .title-sub {
+    font-size: 40px;
+  }
+  .main-banner-item .main-banner-content .detail {
+    font-size: 14px;
+    width: 500px;
+  }
+  .main-banner-item .main-banner-content .btn {
+    margin-top: 50px;
+  }
+  .main-banner-item .main-banner-content .btn a {
+    font-size: 14px;
+  }
+  .main-banner-character {
+    top: 195px;
+    right: -2%;
+    width: 320px;
+  }
+  .sub-banner {
+    margin-top: -160px;
+  }
+  .sub-banner .container .sub-banner-wrap {
+    height: 300px;
+  }
+  .sub-banner .container .sub-banner-wrap .sub-banner-item {
+    height: 150px;
+  }
+  .sub-banner .container .sub-banner-wrap .sub-banner-item-content {
+    padding: 0;
+  }
+  .sub-banner .container .sub-banner-wrap .sub-banner-item-content .detail {
+    font-size: 10px;
   }
 }
 @media all and (max-width: 576px) {
