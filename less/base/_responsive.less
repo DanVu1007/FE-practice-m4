@@ -43,17 +43,10 @@
         margin-top: -60px;
         .container {
             .sub-banner-wrap {
-                height: 400px;
+                // height: 400px;
                 .sub-banner-item {
                     height: 200px;
-                    img {
-                    }
                     &-content {
-                        .img {
-                        }
-                        .title {
-
-                        }
                         .detail {
                             font-size: 10px;                 
                             padding-bottom: 20px;
@@ -123,11 +116,11 @@
     }
     .main-banner {
         &-item {
-            top: 27%;
+            top: 23%;
             left: 50%;
             .main-banner-content {
                 .title {
-                    margin-bottom: 30px;
+                    margin-bottom: 0;
                     .title-sub {
                         font-size: 30px;
                     }
@@ -154,21 +147,18 @@
         margin-top: -60px;
         .container {
             .sub-banner-wrap {
-                height: 400px;
+                // height: 300px;
                 .sub-banner-item {
-                    height: 200px;
-                    img {
-                    }
+                    height: 150px;
                     &-content {
-                        .img {
-                        }
                         .title {
-
+                            padding-top: 7px;
+                            font-size: 12px;
                         }
                         .detail {
                             font-size: 10px;                 
-                            padding-bottom: 20px;
-                            padding-top: 12px;
+                            padding-bottom: 10px;
+                            padding-top: 0;
                         }
                     }
                 }
@@ -193,6 +183,61 @@
         .container {
             .logo {
                 display: none;
+            }
+        }
+    }
+    .main-banner {
+        &-item {
+            top: 54%;
+            left: 50%;
+            .main-banner-content {
+                .title {
+                    font-size: 30px;
+                    padding-bottom: 0;
+                    margin-bottom: 5px;
+                    .title-sub {
+                        font-size: 18px;
+                    }
+                }
+                .detail {
+                    font-size: 7px;
+                    width: 300px;
+                }
+                .btn {
+                    margin-top: 15px;
+                    a {
+                        font-size: 14px;
+                        padding: 7px 20px;
+                    }
+                }
+            }
+        }
+        &-character {
+            top: 200px;
+            right: 5%;
+            width: 200px;
+        }
+    }
+    .sub-banner {
+        margin-top: 15px;
+        .container {
+            .sub-banner-wrap {
+                border-bottom: 1px solid @main-red-color;
+                .sub-banner-item {
+                    height: 180px;
+                    width: 50%;
+                    &-content {
+                        .detail {
+                            font-size: 10px;                 
+                            padding-bottom: 20px;
+                            padding-top: 12px;
+                            max-width: 200px;
+                        }
+                    }
+                }
+                &:last-child {
+                    border-bottom: 0;
+                }
             }
         }
     }

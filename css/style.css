@@ -203,7 +203,6 @@ ul li {
 }
 .sub-banner .container .sub-banner-wrap {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-  height: 500px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -243,6 +242,10 @@ ul li {
   .header .container .menu {
     width: 500px;
   }
+  .main-banner-item {
+    top: 27%;
+    left: 50%;
+  }
   .main-banner-item .main-banner-content .title {
     margin-bottom: 30px;
   }
@@ -261,23 +264,19 @@ ul li {
   }
   .main-banner-character {
     top: 195px;
-    right: -2%;
+    right: 0%;
     width: 320px;
   }
   .sub-banner {
-    margin-top: -160px;
-  }
-  .sub-banner .container .sub-banner-wrap {
-    height: 300px;
+    margin-top: -60px;
   }
   .sub-banner .container .sub-banner-wrap .sub-banner-item {
-    height: 150px;
-  }
-  .sub-banner .container .sub-banner-wrap .sub-banner-item-content {
-    padding: 0;
+    height: 200px;
   }
   .sub-banner .container .sub-banner-wrap .sub-banner-item-content .detail {
     font-size: 10px;
+    padding-bottom: 20px;
+    padding-top: 12px;
   }
 }
 @media all and (max-width: 768px) {
@@ -345,15 +344,19 @@ ul li {
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
   }
+  .main-banner-item {
+    top: 23%;
+    left: 50%;
+  }
   .main-banner-item .main-banner-content .title {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
   .main-banner-item .main-banner-content .title .title-sub {
-    font-size: 40px;
+    font-size: 30px;
   }
   .main-banner-item .main-banner-content .detail {
     font-size: 14px;
-    width: 500px;
+    width: 460px;
   }
   .main-banner-item .main-banner-content .btn {
     margin-top: 50px;
@@ -362,24 +365,24 @@ ul li {
     font-size: 14px;
   }
   .main-banner-character {
-    top: 195px;
-    right: -2%;
+    top: 120px;
+    right: -5%;
     width: 320px;
   }
   .sub-banner {
-    margin-top: -160px;
-  }
-  .sub-banner .container .sub-banner-wrap {
-    height: 300px;
+    margin-top: -60px;
   }
   .sub-banner .container .sub-banner-wrap .sub-banner-item {
     height: 150px;
   }
-  .sub-banner .container .sub-banner-wrap .sub-banner-item-content {
-    padding: 0;
+  .sub-banner .container .sub-banner-wrap .sub-banner-item-content .title {
+    padding-top: 7px;
+    font-size: 12px;
   }
   .sub-banner .container .sub-banner-wrap .sub-banner-item-content .detail {
     font-size: 10px;
+    padding-bottom: 10px;
+    padding-top: 0;
   }
 }
 @media all and (max-width: 576px) {
@@ -398,6 +401,53 @@ ul li {
   }
   .header .container .logo {
     display: none;
+  }
+  .main-banner-item {
+    top: 54%;
+    left: 50%;
+  }
+  .main-banner-item .main-banner-content .title {
+    font-size: 30px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+  .main-banner-item .main-banner-content .title .title-sub {
+    font-size: 18px;
+  }
+  .main-banner-item .main-banner-content .detail {
+    font-size: 7px;
+    width: 300px;
+  }
+  .main-banner-item .main-banner-content .btn {
+    margin-top: 15px;
+  }
+  .main-banner-item .main-banner-content .btn a {
+    font-size: 14px;
+    padding: 7px 20px;
+  }
+  .main-banner-character {
+    top: 200px;
+    right: 5%;
+    width: 200px;
+  }
+  .sub-banner {
+    margin-top: 15px;
+  }
+  .sub-banner .container .sub-banner-wrap {
+    border-bottom: 1px solid #dd2f31;
+  }
+  .sub-banner .container .sub-banner-wrap .sub-banner-item {
+    height: 180px;
+    width: 50%;
+  }
+  .sub-banner .container .sub-banner-wrap .sub-banner-item-content .detail {
+    font-size: 10px;
+    padding-bottom: 20px;
+    padding-top: 12px;
+    max-width: 200px;
+  }
+  .sub-banner .container .sub-banner-wrap:last-child {
+    border-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
