@@ -1,0 +1,51 @@
+//BANNER
+.main-banner {
+    max-height: 950px;
+    margin-top: 0;
+    overflow: hidden;
+    color: red;
+    position: relative;
+    z-index: -1;
+    &-img {
+        background-color: @main-black-color;
+        img {
+            width: 100%;
+            opacity: 0.6;
+        }
+    }
+    &-item {
+        position: absolute;
+        background-color: aqua;
+        top: 50%;
+        left: 50%;
+        .container {
+            .main-banner-content {
+                .title {
+                    font-size: 60px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    .title-sub {
+                        font-size: 40px;
+                    }
+                }
+                .detail {
+                    font-size: 14px;
+                    width: 530px;
+                }
+                .btn {
+                    margin-top: 60px;
+                    a {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        padding: 20px 47px;
+                        color: @main-red-color;
+                        border: 1px solid @main-white-color;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

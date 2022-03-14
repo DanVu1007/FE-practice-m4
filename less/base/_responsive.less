@@ -3,17 +3,103 @@
 }
 
 @media all and (max-width:1024px) {
-    
+    .header {
+        .container {
+            .menu {
+                width: 500px;
+            }
+        }
+    }
 }
 
 @media all and (max-width:768px) {
-    
+    .header {
+        position: absolute;
+        .container {
+            .logo {
+                position: absolute;
+                left: calc(50% - 100px);
+            }
+            .nav-icon {
+                font-size: 30px;
+                display: block;
+            }
+            .menu {
+                .transform(translateX(-100%));
+                .transition(all, .3s);
+                background-color: @main-red-color;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 999;
+                height: 100vh;
+                width: 50vw;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    .menu-title{
+                        display: block;
+                        padding: 20px 0 0 0;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+                    li {
+                        font-size: 14px;
+                        height: 16.6666%;
+                        border-bottom: 1px solid @main-white-color;
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                        a {
+                            padding-left: 20px;
+                            display: block;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                    // &::after {
+                    //     content: '';
+                    //     display: block;
+                    //     position: absolute;
+                    //     background-color: rgba(0, 0, 0, 0.9);
+                    //     top: 0;
+                    //     right: 0;
+                    //     bottom: 0;
+                    //     left: 0;
+                    //     z-index: -1;
+                    // }
+                }
+            }
+            .active {
+                .transform(translateX(0));
+            }
+        }
+    }
 }
 
 @media all and (max-width:576px) {
-    
+    .header {
+        position: absolute;
+        .mobile-logo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50%;
+            }
+            padding: 20px 0 0 0;
+        }
+        .container {
+            .logo {
+                display: none;
+            }
+        }
+    }
 }
 
 @media all and (max-width:375px) {
-    
 }

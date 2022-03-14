@@ -1,6 +1,6 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+    <!DOCTYPE html>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +15,19 @@
     <!-- JS -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <!-- HEADER -->
-        <div class="header">
-            <!-- MENU -->
-            <div class="navbar" id="menu">
+        <header class="header" id="menu">
+            <div class="mobile-logo"><img src="img/logo.png" alt=""></div>
+            <div class="container">
                 <div class="logo"><img src="img/logo.png" alt=""></div>
-                <div class="menu">
+                <div class="nav-icon"><i class="fa-solid fa-bars"></i></div>
+                <div class="menu" id="menu">
                     <ul>
+                        <div class="menu-title">Menu</div>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Pages</a></li>
                         <li><a href="#">Classes</a></li>
@@ -39,45 +42,27 @@
                     <div class="action-button-item"><i class="fa-solid fa-user"></i></div>
                 </div>
             </div>
-            <!-- END MENU -->
-            <!-- BANNER -->
-            <div class="navbar" id="banner">
-            </div>
-            <!-- END BANNER -->
-            <!-- MAIN BANNER -->
-            <div class="navbar" id="main-banner">
-            </div>
-            <!-- END MAIN BANNER -->
-        </div>
+        </header>
         <!-- END HEADER -->
-        <!-- MAIN CONTENT -->
-        <div class="main-content">
-            <div class="container">
-                <!-- LIST TITLE -->
-                <div class="list-title"></div>
-                <!-- END LIST TITLE -->
-                <!-- LIST -->
-                <div class="list-items">
-                    <div class="row">
-                        <div class="item"></div>
+        <!-- MAIN BANNER -->
+        <div class="main-banner" id="main-banner">
+            <div class="main-banner-img"><img src="img/list5.png" alt=""></div>
+            <div class="main-banner-item">
+                <div class="container">
+                    <div class="main-banner-content">
+                        <div class="title">Dumbbells Shop
+                            <div class="title-sub">Best body fitness</div>
+                        </div>
+                        <div class="detail">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</div>
+                        <div class="btn"><a href="">Shop now</a></div>
                     </div>
                 </div>
-                <!-- END LIST -->
-                <!-- COMMENT -->
-                <div class="comment"></div>
-                <!-- END COMMENT -->
-                <!-- BRAND -->
-                <div class="brand"></div>
-                <!-- END BRAND -->
             </div>
         </div>
-        <!-- END MAIN CONTENT -->
-
-        <!-- FOOTER -->
-        <footer class="footer">
-
-        </footer>
-        <!-- END FOOTER -->
+        <!-- END MAIN BANNER -->
+        
     </div>
+    <div class="cover"></div>
+
 </body>
 </html>
