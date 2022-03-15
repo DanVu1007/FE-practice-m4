@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
     .strength-title {
         font-size: 36px;
         font-weight: 700;
@@ -53,15 +54,17 @@
 //BRAND
 .brand {
     .container {
-        // background-color: aqua;
-        border-top: 1px solid @slider-gray;
-        .row {
-            .brand-item {
-                display: flex;
-                justify-content: center;
-                .cols(16.66667%);
-                padding: 40px 0;
+            .brand-list {
+                border-top: 3px solid @slider-gray;
+                .row {
+                    .brand-item {
+                        .cols(16.6667%);
+                        padding: 30px 0 30px 0;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
             }
-        }
+        
     }
 }

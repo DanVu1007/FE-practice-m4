@@ -127,5 +127,18 @@
             height: 49px;
             z-index: 146;
           }
+          .Lorem_Ipsum_is_simply_dummy_text_of_the_printin {
+            font-size: 14px;
+            font-family: "Poppins";
+            color: rgb(119, 119, 119);
+            line-height: 1.714;
+            text-align: center;
+            position: absolute;
+            left: 574.935px;
+            top: 3205.816px;
+            width: 711px;
+            height: 39px;
+            z-index: 166;
+          }
           
           a bicycle with a wrong but they accepted free return for me and exchange 

@@ -1,20 +1,33 @@
 .footer {
     width: 100%;
     background-color: @background-color;
+    padding: 100px 0 30px 0;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
     &-social {
+        border-bottom: 1px solid @main-gray-color;
         display: flex;
         flex-direction: column;
         align-items: center;
         &-img {
             width: 200px;
+            margin-bottom: 35px;
         }
         &-content {
-            width: 700px;
+            width: 720px;
             color: @main-gray-color;
+            font-size: 14px;
+            text-align: center;
+            line-height: 1.714;
+            margin-bottom: 40px;
         }
         &-icon {
+            padding: 0 0 60px 12px;
             ul {
                 display: flex;
+                width: 210px;
+                justify-content: space-between;
                 li {
                     a {
                         color: @main-gray-color;
@@ -23,4 +36,55 @@
             }
         }
     }
+    &-moreinfo {
+        margin-top: 68px;
+        .container {
+            .row {
+                .footer-info {
+                    .cols(25%);
+                    &-title {
+                        color: @main-white-color;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-bottom: 30px;
+                    }
+                    &-content {
+                        ul {
+                            font-size: 14px;
+                            li {
+                                .transition(all, .3s);
+                                margin-bottom: 20px;
+                                i {
+                                    .transition(all, .3s);
+                                    color: @main-gray-color;
+                                    width: 25px;
+                                }
+                                a {
+                                    .transition(all, .3s);
+                                    color: @main-gray-color;
+                                }
+                                &:hover {
+                                    i {
+                                        color: @main-white-color;
+                                    }
+                                    a {
+                                        color: @main-white-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: @main-gray-color;
+    background-color: @main-black-color;
+    padding: 20px 0;
 }
