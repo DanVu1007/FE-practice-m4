@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //Click menu
     $('.nav-icon').click(function (e) { 
         e.preventDefault();
         $('.menu').addClass('active');
@@ -10,4 +11,6 @@ $(document).ready(function () {
         $('.menu').removeClass('active');
         $('.cover').removeClass('active');
     });
+    //slider
+    // $('.strength').slick();
 });

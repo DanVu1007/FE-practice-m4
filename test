@@ -114,3 +114,18 @@
             z-index: 26;
           }
           
+          ._Good_services__I_bought_a_bicycle_with_a_wrong {
+            font-size: 18px;
+            font-family: "Poppins";
+            color: rgb(119, 119, 119);
+            line-height: 1.667;
+            text-align: center;
+            position: absolute;
+            left: 573.974px;
+            top: 2583.474px;
+            width: 757px;
+            height: 49px;
+            z-index: 146;
+          }
+          
+          a bicycle with a wrong but they accepted free return for me and exchange 
