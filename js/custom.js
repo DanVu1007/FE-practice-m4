@@ -12,5 +12,11 @@ $(document).ready(function () {
         $('.cover').removeClass('active');
     });
     //slider
-    $('.strength').slick();
+    $('.strength').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        // adaptiveHeight: true
+      });
 });

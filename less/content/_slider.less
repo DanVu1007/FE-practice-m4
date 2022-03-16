@@ -1,15 +1,41 @@
 .comment {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 85px 0 150px 0;
+    margin: 85px 0 122px 0;
     .strength-title {
+        width: 100%;
+        text-align: center;
         font-size: 36px;
         font-weight: 700;
-        margin-bottom: 46px;
+        margin-bottom: 16px;
     }
+    // .slick-dots li.slick-active button:before
     .strength {
+        &.slick-initialized{
+            height: 300px;
+            .slick-dots {
+                li.slick-active {
+                    button {
+                        &::before {
+                            color: @main-red-color;
+                        }
+                    }
+                }
+                li {
+                    width: 10px;
+                    button {    
+                        &:hover{
+                            &::before {
+                                color: @main-red-color;
+                            }
+                        }
+                        &::before {
+                            left: -5px;
+                            top: 2px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
         &-slide {
             display: flex;
             flex-direction: column;
@@ -28,7 +54,7 @@
                 }
             }
             &-comment {
-                width: 70%;
+                width: 68%;
                 font-size: 18px;
                 color: @slider-gray;
                 text-align: center;
@@ -45,7 +71,7 @@
                 }
                 .title {
                     font-size: 14px;
-                    // margin-bottom: 2000px;
+                    // margin-bottom: 150px;
                     color: @slider-gray;
                 }
             }
@@ -60,7 +86,7 @@
                 .row {
                     .brand-item {
                         .cols(16.6667%);
-                        padding: 30px 0 30px 0;
+                        padding: 35px 0 35px 0;
                         display: flex;
                         justify-content: center;
                     }

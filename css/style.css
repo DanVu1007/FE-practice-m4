@@ -299,19 +299,23 @@ ul li {
   margin-bottom: 35px;
 }
 .footer-social-content {
-  width: 70%;
+  width: 66%;
   color: #777;
   font-size: 14px;
   text-align: center;
   line-height: 1.714;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 .footer-social-icon {
-  padding: 0 0 60px 12px;
+  padding: 0 0 54px 12px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .footer-social-icon ul {
   display: flex;
-  width: 210px;
+  width: 18%;
   justify-content: space-between;
 }
 .footer-social-icon ul li a {
@@ -326,7 +330,7 @@ ul li {
   color: #fff;
 }
 .footer-moreinfo {
-  margin-top: 68px;
+  margin-top: 70px;
 }
 .footer-moreinfo .container .row .footer-info {
   width: 25%;
@@ -530,16 +534,31 @@ ul li {
   opacity: 1;
 }
 .comment {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 85px 0 150px 0;
+  margin: 85px 0 122px 0;
 }
 .comment .strength-title {
+  width: 100%;
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 46px;
+  margin-bottom: 16px;
+}
+.comment .strength.slick-initialized {
+  height: 300px;
+}
+.comment .strength.slick-initialized .slick-dots li.slick-active button::before {
+  color: #dd2f31;
+}
+.comment .strength.slick-initialized .slick-dots li {
+  width: 10px;
+}
+.comment .strength.slick-initialized .slick-dots li button:hover::before {
+  color: #dd2f31;
+}
+.comment .strength.slick-initialized .slick-dots li button::before {
+  left: -5px;
+  top: 2px;
+  font-size: 12px;
 }
 .comment .strength-slide {
   display: flex;
@@ -560,7 +579,7 @@ ul li {
   margin-left: -70px;
 }
 .comment .strength-slide-comment {
-  width: 70%;
+  width: 68%;
   font-size: 18px;
   color: #ccc;
   text-align: center;
@@ -586,7 +605,7 @@ ul li {
 .brand .container .brand-list .row .brand-item {
   width: 16.6667%;
   padding: 0 15px;
-  padding: 30px 0 30px 0;
+  padding: 35px 0 35px 0;
   display: flex;
   justify-content: center;
 }
