@@ -15,7 +15,7 @@
             margin-bottom: 35px;
         }
         &-content {
-            width: 720px;
+            width: 70%;
             color: @main-gray-color;
             font-size: 14px;
             text-align: center;
@@ -30,7 +30,11 @@
                 justify-content: space-between;
                 li {
                     a {
+                        .transition (all, .3s);
                         color: @main-gray-color;
+                        &:hover {
+                            color: @main-white-color;
+                        }
                     }
                 }
             }

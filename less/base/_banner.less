@@ -1,10 +1,10 @@
 //BANNER
 .main-banner {
     max-height: 950px;
-    margin-top: 0;
+    // margin-top: 0;
     overflow: hidden;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     color: @main-white-color;
     &-img {
         background-color: @main-black-color;
@@ -15,10 +15,10 @@
     }
     &-item {
         position: absolute;
+        .transform(translateX(-50%));
         z-index: 10;
         top: 31%;
         left: 50%;
-        .transform(translateX(-50%));
         .main-banner-content {
             .title {
                 font-size: 60px;
@@ -33,9 +33,6 @@
                 font-size: 14px;
                 width: 530px;
                 line-height: 1.7em;
-                &:hover {
-                    cursor: pointer;
-                }
             }
             .btn {
                 margin-top: 70px;
@@ -44,6 +41,14 @@
                     text-transform: uppercase;
                     padding: 15px 47px;
                     border: 1px solid @main-white-color;
+                    .transition(all, .3s);
+                }
+                &:hover {
+                    a {
+                        border: 1px solid @main-red-color;
+                        background-color: @main-red-color;
+                        color: @main-white-color;
+                    }
                 }
             }
         }
@@ -64,6 +69,12 @@
 .sub-banner {
     margin-top: -78px;
     margin-bottom: 96.5px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    width: 100%;
+    .transform(translateX(-50%));
+
     .container {
         .sub-banner-wrap {
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -85,10 +96,6 @@
                     flex-direction: column;
                     justify-content: flex-end;
                     align-items: center;
-                    .img {
-                        img {
-                        }
-                    }
                     .title {
                         font-size: 18px;
                         font-weight: 700;
@@ -101,8 +108,7 @@
                         font-size: 14px;
                         color: @main-gray-color;
                         line-height: 1.7em;
-                        padding-bottom: 32px;
-                        padding-top: 19px;
+                        padding: 19px 0 32px 0;
                     }
                 }
             }
