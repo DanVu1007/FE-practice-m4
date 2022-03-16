@@ -1,44 +1,579 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AHT | Practice</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="css/fontawesome.all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- JS -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
 </head>
+
 <body>
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <div class="wrapper">
-        <!-- HEADER -->
-        <div class="header">
-
+    <div class="cover"></div>
+    
+    <!-- HEADER -->
+    <header class="header" id="menu">
+        <div class="mobile-logo"><img src="img/logo.png" alt="" /></div>
+        <div class="container">
+            <div class="logo"><img src="img/logo.png" alt="" /></div>
+            <div class="nav-icon"><i class="fa-solid fa-bars"></i></div>
+            <div class="menu" id="menu">
+                <ul>
+                    <div class="menu-title">Menu</div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="action-button">
+                <div class="action-button-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="action-button-item">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
+                <div class="action-button-item">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
         </div>
-        <!-- END HEADER -->
-        <!-- MENU -->
-        <div class="navbar">
-
+    </header>
+    <!-- END HEADER -->
+    <!-- MAIN BANNER -->
+    <div class="main-banner" id="main-banner">
+        <div class="main-banner-img">
+            <img src="img/main-banner.jpg" alt="" />
         </div>
-        <!-- END MENU -->
-        <!-- MAIN CONTENT -->
-        <div class="main-content">
-
+        <div class="main-banner-item container">
+            <div class="main-banner-content">
+                <div class="title">
+                    Dumbbells Shop
+                    <div class="title-sub">Best body fitness</div>
+                </div>
+                <div class="detail">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s,
+                    when an unknown printer
+                </div>
+                <div class="btn"><a href="">Shop now</a></div>
+            </div>
         </div>
-        <!-- END MAIN CONTENT -->
-        <!-- FOOTER -->
-        <footer class="footer">
-
-        </footer>
-        <!-- END FOOTER -->
+        <div class="main-banner-character">
+            <img src="img/main-character.png" alt="" />
+        </div>
     </div>
+    <!-- END MAIN BANNER -->
+    <!-- SUB BANNER -->
+    <div class="sub-banner">
+        <div class="container">
+            <div class="sub-banner-wrap">
+                <div class="sub-banner-item">
+                    <img src="img/banner2.png" alt="" />
+                </div>
+                <div class="sub-banner-item">
+                    <div class="sub-banner-item-content">
+                        <div class="img">
+                            <img src="img/icon_1.png" alt="" />
+                        </div>
+                        <div class="title">Strength</div>
+                        <div class="detail">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-banner-item">
+                    <img src="img/banner3.png" alt="" />
+                </div>
+                <div class="sub-banner-item">
+                    <div class="sub-banner-item-content">
+                        <div class="img">
+                            <img src="img/icon_3.png" alt="" />
+                        </div>
+                        <div class="title">dumbbells</div>
+                        <div class="detail">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-banner-item">
+                    <img src="img/banner1.png" alt="" />
+                </div>
+                <div class="sub-banner-item">
+                    <div class="sub-banner-item-content">
+                        <div class="img">
+                            <img src="img/icon_2.png" alt="" />
+                        </div>
+                        <div class="title">power rack & cages</div>
+                        <div class="detail">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SUB BANNER -->
+    <!-- LIST PRODUCT -->
+    <div class="product container">
+        <div class="product-title">
+            <ul>
+                <li class="active"><a href="">Top sellers</a></li>
+                <li><a href="">Featured</a></li>
+                <li><a href="">Most reviews</a></li>
+            </ul>
+        </div>
+        <!-- LIST ITEM -->
+        <div class="product-list row">
+            <!-- ITEM 1 -->
+            <div class="product-list-item">
+                <div class="product-list-item-show">
+                    <div class="show-img">
+                        <img src="img/list1.png" alt="" />
+                    </div>
+                    <div class="show-title">
+                        <div class="show-title-name">
+                            Body Champ Cardio
+                        </div>
+                        <div class="show-title-price">$320.00</div>
+                    </div>
+                    <div class="show-btn">
+                        <ul class="list-btn">
+                            <li>
+                                <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM 1 -->
+            <!-- ITEM 2 -->
+            <div class="product-list-item">
+                <div class="product-list-item-show">
+                    <div class="show-img">
+                        <img src="img/list2.png" alt="" />
+                    </div>
+                    <div class="show-title">
+                        <div class="show-title-name">
+                            Body Solid GCEC340
+                        </div>
+                        <div class="show-title-price">$214.00</div>
+                    </div>
+                    <div class="show-btn">
+                        <ul class="list-btn">
+                            <li>
+                                <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM 2 -->
+            <!-- ITEM 3 -->
+            <div class="product-list-item">
+                <div class="product-list-item-show">
+                    <div class="show-img">
+                        <img src="img/list3.png" alt="" />
+                    </div>
+                    <div class="show-title">
+                        <div class="show-title-name">
+                            Bowflex BXE116 Elliptical
+                        </div>
+                        <div class="show-title-price">$421.00</div>
+                    </div>
+                    <div class="show-btn">
+                        <ul class="list-btn">
+                            <li>
+                                <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM 3 -->
+            <!-- ITEM 4 -->
+            <div class="product-list-item">
+                <div class="product-list-item-show">
+                    <div class="show-img">
+                        <img src="img/list4.png" alt="" />
+                    </div>
+                    <div class="show-title">
+                        <div class="show-title-name">ETHOS GHD</div>
+                        <div class="show-title-price">$152.00</div>
+                    </div>
+                    <div class="show-btn">
+                        <ul class="list-btn">
+                            <li>
+                                <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM 4 -->
+            <!-- ITEM 5 -->
+            <div class="product-list-item">
+                <div class="product-list-item-show">
+                    <div class="show-img">
+                        <img src="img/list5.png" alt="" />
+                    </div>
+                    <div class="show-title">
+                        <div class="show-title-name">
+                            AFG Pro 7.2AI Incline
+                        </div>
+                        <div class="show-title-price">$252.00</div>
+                    </div>
+                    <div class="show-btn">
+                        <ul class="list-btn">
+                            <li>
+                                <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM 5 -->
+            <!-- ITEM 6 -->
+            <div class="product-list-item">
+                <div class="product-list-item-show">
+                    <div class="show-img">
+                        <img src="img/list6.png" alt="" />
+                    </div>
+                    <div class="show-title">
+                        <div class="show-title-name">Weight Bench</div>
+                        <div class="show-title-price">$412.00</div>
+                    </div>
+                    <div class="show-btn">
+                        <ul class="list-btn">
+                            <li>
+                                <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM 6 -->
+            <!-- ITEM 7 -->
+            <div class="product-list-item">
+                <div class="product-list-item-show">
+                    <div class="show-img">
+                        <img src="img/list7.png" alt="" />
+                    </div>
+                    <div class="show-title">
+                        <div class="show-title-name">
+                            ProForm Hiit Trainer Lite 5.9
+                        </div>
+                        <div class="show-title-price">$300.00</div>
+                    </div>
+                    <div class="show-btn">
+                        <ul class="list-btn">
+                            <li>
+                                <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM 7 -->
+            <!-- ITEM 8 -->
+            <div class="product-list-item">
+                <div class="product-list-item-show">
+                    <div class="show-img">
+                        <img src="img/list8.png" alt="" />
+                    </div>
+                    <div class="show-title">
+                        <div class="show-title-name">
+                            Fitness Gear Pro
+                        </div>
+                        <div class="show-title-price">$124.00</div>
+                    </div>
+                    <div class="show-btn">
+                        <ul class="list-btn">
+                            <li>
+                                <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM 8 -->
+        </div>
+        <!-- LIST ITEM -->
+    </div>
+    <!-- END LIST PRODUCT -->
+    <!-- STRENGTH -->
+    <div class="container">
+        <div class="comment">
+            <div class="strength-title">
+                See What They Said About Us
+            </div>
+            <div class="strength">
+                <!-- slide 1 -->
+                <div class="strength-slide">
+                    <div class="strength-slide-avatar">
+                        <img src="img/avatar1.png" alt="" />
+                    </div>
+                    <div class="strength-slide-comment">
+                        “Good services. I bought a bicycle with a wrong
+                        but they accepted free return for me and
+                        exchange a new product for me.
+                    </div>
+                    <div class="strength-slide-name">
+                        <div class="name">Lina</div>
+                        <div class="title">Happy clients</div>
+                    </div>
+                </div>
+                <!-- end slide 1 -->
+                <!-- slide 1 -->
+                <div class="strength-slide">
+                    <div class="strength-slide-avatar">
+                        <img src="img/avatar1.png" alt="" />
+                    </div>
+                    <div class="strength-slide-comment">
+                        “Good services. I bought a bicycle with a wrong
+                        but they accepted free return for me and
+                        exchange a new product for me.
+                    </div>
+                    <div class="strength-slide-name">
+                        <div class="name">Lina</div>
+                        <div class="title">Happy clients</div>
+                    </div>
+                </div>
+                <!-- end slide 1 -->
+                <!-- slide 1 -->
+                <div class="strength-slide">
+                    <div class="strength-slide-avatar">
+                        <img src="img/avatar1.png" alt="" />
+                    </div>
+                    <div class="strength-slide-comment">
+                        “Good services. I bought a bicycle with a wrong
+                        but they accepted free return for me and
+                        exchange a new product for me.
+                    </div>
+                    <div class="strength-slide-name">
+                        <div class="name">Lina</div>
+                        <div class="title">Happy clients</div>
+                    </div>
+                </div>
+                <!-- end slide 1 -->
+            </div>
+        </div>
+    </div>
+    <!-- END STRENGTH -->
+    <!-- BRAND -->
+    <div class="brand">
+        <div class="container">
+                <div class="brand-list">
+                    <div class="row">
+                        <div class="brand-item"><img src="img/Brand_1.png" alt=""></div>
+                        <div class="brand-item"><img src="img/Brand_2.png" alt=""></div>
+                        <div class="brand-item"><img src="img/Brand_6.png" alt=""></div>
+                        <div class="brand-item"><img src="img/Brand_5.png" alt=""></div>
+                        <div class="brand-item"><img src="img/Brand_3.png" alt=""></div>
+                        <div class="brand-item"><img src="img/Brand_4.png" alt=""></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- END BRAND -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <img class="footer-social-img" src="img/logo.png" alt="">
+                <div class="footer-social-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</div>
+                <div class="footer-social-icon">
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-moreinfo">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-info">
+                        <div class="footer-info-title">Contact us</div>
+                        <div class="footer-info-content">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <a href="">200 Lincoln Ave, Salinas, CA 93901</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone-flip"></i>
+                                    <a href="">023 32423 223</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="">gymax@example.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-clock"></i>
+                                    <a href="">9:00 - 20:00 All day</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-info-title">My Account</div>
+                        <div class="footer-info-content">
+                            <ul>
+                                <li>
+                                    <a href="">My account</a>
+                                </li>
+                                <li>
+                                    <a href="">Check out</a>
+                                </li>
+                                <li>
+                                    <a href="">Register</a>
+                                </li>
+                                <li>
+                                    <a href="">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-info-title">information</div>
+                        <div class="footer-info-content">
+                            <ul>
+                                <li>
+                                    <a href="">About us</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="">Terms of user</a>
+                                </li>
+                                <li>
+                                    <a href="">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-info-title">Quick Link</div>
+                        <div class="footer-info-content">
+                            <ul>
+                                <li>
+                                    <a href="">New user</a>
+                                </li>
+                                <li>
+                                    <a href="">Help center</a>
+                                </li>
+                                <li>
+                                    <a href="">Report spam</a>
+                                </li>
+                                <li>
+                                    <a href="">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-copyright">
+        Copyright © 2019 Gymax - Design by ArrowHitech - All Rights Reserved
+    </div>
+
 </body>
+
 </html>

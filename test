@@ -1,0 +1,144 @@
+        <!-- END HEADER -->
+        <!-- HEADER -->
+        <div class="header">
+            <!-- BANNER -->
+            <div class="banner" id="banner">
+                <div class="container">
+                    <!-- banner item 1 -->
+                    <div class="banner-img-item">
+                        <img src="img/banner1.png" alt="">
+                    </div>
+                    <!-- end banner item 1 -->
+                    
+                    <!-- banner item 2 -->
+                    <div class="banner-content-item">
+                        <div class="content-img">
+                            <img src="img/icon_1.png" alt="">
+                        </div>
+                        <div class="content-title">Strength</div>
+                        <div class="content-detail">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                    <!-- end banner item 2 -->
+                    <!-- banner item 3 -->
+                    <div class="banner-img-item">
+                        <img src="img/banner2.png" alt="">
+                    </div>
+                    <!-- end banner item 3 -->
+                    
+                    <!-- banner item 4 -->
+                    <div class="banner-content-item">
+                        <div class="content-img">
+                            <img src="img/icon_2.png" alt="">
+                        </div>
+                        <div class="content-title">dumbbells</div>
+                        <div class="content-detail">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                    <!-- end banner item 4 -->
+                    <!-- banner item 5 -->
+                    <div class="banner-img-item">
+                        <img src="img/banner3.png" alt="">
+                    </div>
+                    <!-- end banner item 5 -->
+                    
+                    <!-- banner item 6 -->
+                    <div class="banner-content-item">
+                        <div class="content-img">
+                            <img src="img/icon_3.png" alt="">
+                        </div>
+                        <div class="content-title">power rack & cages</div>
+                        <div class="content-detail">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                    <!-- end banner item 6 -->
+                </div>
+            </div>
+            <!-- END BANNER -->
+            <!-- MAIN BANNER -->
+            <div class="main-banner" id="main-banner">
+                <div class="main-banner-img"></div>
+                <div class="main-banner-content">
+                    <div class="title"></div>
+                    <div class="detail"></div>
+                    <div class="btn"></div>
+                </div>
+            </div>
+            <!-- END MAIN BANNER -->
+        </div>
+        <!-- END HEADER -->
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="container">
+                <!-- LIST TITLE -->
+                <div class="list-title"></div>
+                <!-- END LIST TITLE -->
+                <!-- LIST -->
+                <div class="list-items">
+                    <div class="row">
+                        <div class="item"></div>
+                    </div>
+                </div>
+                <!-- END LIST -->
+                <!-- COMMENT -->
+                <div class="comment"></div>
+                <!-- END COMMENT -->
+                <!-- BRAND -->
+                <div class="brand"></div>
+                <!-- END BRAND -->
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+        </footer>
+        <!-- END FOOTER -->
+
+
+        .Lorem_Ipsum_is_simply_dummy_text_of_the_printin {
+            font-size: 14px;
+            font-family: "Poppins";
+            color: rgb(119, 119, 119);
+            line-height: 1.714;
+            text-align: center;
+            position: absolute;
+            left: 411.397px;
+            top: 1318.816px;
+            width: 286px;
+            height: 39px;
+            z-index: 26;
+          }
+          
+          ._Good_services__I_bought_a_bicycle_with_a_wrong {
+            font-size: 18px;
+            font-family: "Poppins";
+            color: rgb(119, 119, 119);
+            line-height: 1.667;
+            text-align: center;
+            position: absolute;
+            left: 573.974px;
+            top: 2583.474px;
+            width: 757px;
+            height: 49px;
+            z-index: 146;
+          }
+          .Lorem_Ipsum_is_simply_dummy_text_of_the_printin {
+            font-size: 14px;
+            font-family: "Poppins";
+            color: rgb(119, 119, 119);
+            line-height: 1.714;
+            text-align: center;
+            position: absolute;
+            left: 574.935px;
+            top: 3205.816px;
+            width: 711px;
+            height: 39px;
+            z-index: 166;
+          }
+          
+          a bicycle with a wrong but they accepted free return for me and exchange 
