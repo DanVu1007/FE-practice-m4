@@ -105,9 +105,15 @@
         margin: 40px 0 40px 0;
         .strength-title {
             font-size: 30px;
-            margin-bottom: 25px;
+            margin-bottom: 0;
         }
         .strength {
+            height: 225px;
+            &.slick-initialized {
+                .slick-dots {
+                    bottom: -5px;
+                }
+            }
             &-slide {
                 &-avatar {
                     margin-bottom: 25px;
@@ -365,10 +371,16 @@
     .comment {
         margin: 40px 0 40px 0;
         .strength-title {
-            font-size: 20px;
-            margin-bottom: 15px;
+            font-size: 30px;
+            margin-bottom: 0;
         }
         .strength {
+            &.slick-initialized {
+                height: 230px;
+                .slick-dots {
+                    bottom: -12px;
+                }
+            }
             &-slide {
                 &-avatar {
                     margin-bottom: 15px;
@@ -598,6 +610,12 @@
             margin-bottom: 15px;
         }
         .strength {
+            &.slick-initialized {
+                height: 200px;
+                .slick-dots {
+                    bottom: -35px;
+                }
+            }
             &-slide {
                 &-avatar {
                     margin-bottom: 15px;
@@ -623,6 +641,7 @@
     //END SLIDE COMMENT
     //BRAND
     .brand {
+        margin-top: 80px;
         .container {
                 .brand-list {
                     .row {
