@@ -1204,7 +1204,7 @@ ul li {
     padding: 8px 0;
   }
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 376px) {
   .header {
     position: absolute;
   }
@@ -1212,8 +1212,8 @@ ul li {
     height: 70px;
   }
   .header .container .logo {
-    width: 100px;
-    margin: 0 0 0 -35px;
+    width: 90px;
+    margin: 0 0 0 -30px;
   }
   .main-banner-item {
     top: 32%;
