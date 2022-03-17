@@ -216,9 +216,13 @@
 }
 // =======================================MAX-WIDTH: 768px====================================
 @media all and (max-width:768px) {
+    .cover.active {
+        z-index: 300;
+    }
     // HEADER
     .header {
         position: absolute;
+        z-index: 200;
         .container {
             .logo {
                 position: absolute;
@@ -235,7 +239,7 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-                z-index: 1001;
+                z-index: 1000;
                 height: 100vh;
                 width: 50vw;
                 margin-left: 0;
@@ -249,9 +253,10 @@
                         text-align: center;
                         text-transform: uppercase;
                         font-weight: 700;
+                        font-size: 24px;
                     }
                     li {
-                        font-size: 14px;
+                        font-size: 18px;
                         height: 16.6666%;
                         border-bottom: 1px solid @main-white-color;
                         &:last-child {
@@ -263,6 +268,10 @@
                             height: 100%;
                             display: flex;
                             align-items: center;
+                            &:hover {
+                                color: @main-white-color;
+                                opacity: 0.5;
+                            }
                         }
                     }
                 }
